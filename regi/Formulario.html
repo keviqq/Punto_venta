@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="forms.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.pinimg.com/originals/3d/26/92/3d2692fb753d3b710708c9e7742e9b4c.png">
+</head>
+<body>
+    
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+           
+            </div>
+            <div class="grupo">
+                <input type="text" name="nombre" id="nombre"required><span class="barra"></span>
+                <label for="name">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="" id="name"required><span class="barra"></span>
+                <label for="apellido">Apellido</label>
+            </div>
+            <input type="number" name="edad" id="edad" class="form-control" placeholder="Edad">
+              
+                
+            <div class="grupo">
+                <input type="text" name="email" id="iemail"required><span class="barra"></span>
+                <label for="email">Correo</label>
+            </div>
+               
+            </div>
+        </div>
+
+        
+      
+        <button type="text" onclickid="guardardatos()" value="Guardat datos" >Enviar</button>
+       
+        <a href="index.html"><input type="button" value="Entrar" /></a>
+        </div>
+    </form>
+</div>
+
+<script >
+ function guardardatos(){
+        localStorage.name=document.getElementById("name").value;
+        localStorage.name=document.getElementById("appel").value;
+        localStorage.email=document.getElementById("email").value;
+        localStorage.password=document.getElementById("password").value;
+
+    }
+    function recuperarDatos(){
+        if((localStorage.name !=undefined)&&(localStorage.password!=undefined)(localStorage.email!=undefined)){
+            
+        }else{
+            document.getElementById("datos").innerHTML="No has introducido tu nombre y password;"
+        }
+    }
+
+</script>
+</body>
+</html>
